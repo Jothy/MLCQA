@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1492</width>
+    <height>713</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>Linac + QA type</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QComboBox" name="LinacID">
+              <property name="editable">
+               <bool>true</bool>
+              </property>
+              <item>
+               <property name="text">
+                <string>LA1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>LA2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>LA3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>LA4</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="QAtypeID">
+              <property name="editable">
+               <bool>true</bool>
+              </property>
+              <item>
+               <property name="text">
+                <string>Alpha</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Beta</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gamma</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Delta</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Fault QA</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Adhoc QA</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Other</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>1028</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>3</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Outputs</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_14">
+             <item>
+              <widget class="QGroupBox" name="groupBox">
+               <property name="title">
+                <string>Equipment + Settings</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout">
+                <item row="0" column="0">
+                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_4">
+                    <item>
+                     <widget class="QComboBox" name="EnergyID">
+                      <property name="editable">
+                       <bool>true</bool>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>6X</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>18X</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>20E</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>16E</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>12E</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>9E</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>6E</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>4E</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>SRS6X</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Other</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QComboBox" name="ChamberID">
+                      <property name="editable">
+                       <bool>true</bool>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>0.6cc Main</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>0.6cc Backup</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Adv Marcus #1188A</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Adv marcus #1187B</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Roos (Main)</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Roos (Backup)</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Other</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <item>
+                     <widget class="QLabel" name="label_5">
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Electrometer</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QComboBox" name="ElectrometerID">
+                      <property name="editable">
+                       <bool>true</bool>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Unidos E</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Unidos 10002</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Tandem</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>#255 Field 1</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>#229 Field 2</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Other</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
+                    <item>
+                     <widget class="QLabel" name="label_8">
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Voltage</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QComboBox" name="VoltageID">
+                      <property name="editable">
+                       <bool>true</bool>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>-300V</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>+200V</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Other</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_2">
+                    <item>
+                     <widget class="QLabel" name="label">
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>SSD (cm):</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="SSDID">
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>95</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_3">
+                    <item>
+                     <widget class="QLabel" name="label_3">
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Depth (cm):</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="DepthID">
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>5</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>868</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_15">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QGroupBox" name="groupBox_3">
+                 <property name="title">
+                  <string>Temparature+&amp; Pressure</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <item row="0" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout_10">
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_7">
+                      <item>
+                       <widget class="QLabel" name="label_6">
+                        <property name="font">
+                         <font>
+                          <pointsize>10</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Temp</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QDoubleSpinBox" name="TempID">
+                        <property name="value">
+                         <double>20.000000000000000</double>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_9">
+                      <item>
+                       <widget class="QLabel" name="label_7">
+                        <property name="font">
+                         <font>
+                          <pointsize>10</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Pres</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QDoubleSpinBox" name="PresID">
+                        <property name="maximum">
+                         <double>1500.000000000000000</double>
+                        </property>
+                        <property name="value">
+                         <double>980.000000000000000</double>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>128</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="AddResultsID">
+                 <property name="text">
+                  <string>Add Results</string>
+                 </property>
+                 <property name="shortcut">
+                  <string>Space</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>1188</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="title">
+              <string>Results</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="tableWidget">
+                <property name="font">
+                 <font>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>true</bool>
+                </property>
+                <property name="alternatingRowColors">
+                 <bool>true</bool>
+                </property>
+                <property name="gridStyle">
+                 <enum>Qt::SolidLine</enum>
+                </property>
+                <property name="sortingEnabled">
+                 <bool>true</bool>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <attribute name="horizontalHeaderMinimumSectionSize">
+                 <number>30</number>
+                </attribute>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="verticalHeaderDefaultSectionSize">
+                 <number>30</number>
+                </attribute>
+                <attribute name="verticalHeaderMinimumSectionSize">
+                 <number>30</number>
+                </attribute>
+                <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+                 <bool>true</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>Energy</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Status</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>SSD</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Depth</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Rdg1</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Rdg2</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Rdg3</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>AvgRdg</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Kt,p</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignLeft|AlignVCenter</set>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NDw,Q</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Ks</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Kpol</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>KElec</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Voltage</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>PDDcorr</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Dw</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>%Diff</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Comment</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Flatness &amp; Symmetry</string>
+        </attribute>
+        <widget class="QTableWidget" name="FlatSymTable">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>20</y>
+           <width>441</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <row>
+          <property name="text">
+           <string>6X</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>18X</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>20E</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>16E</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>12E</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>9E</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>6E</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4E</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Radial (Y) Flat</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Radial (Y) Sym</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Trans (X) Flat</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Trans (X) Sym</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>Photon Energy</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_8">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>971</width>
+           <height>341</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>TPR20/10</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <widget class="QSplitter" name="splitter">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="QGroupBox" name="groupBox_5">
+             <property name="title">
+              <string>SSD:80 Depth:20</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="PhotonEnergy1">
+                <row>
+                 <property name="text">
+                  <string>6X</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>18X</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>SRS 6X</string>
+                 </property>
+                </row>
+                <column>
+                 <property name="text">
+                  <string>Rdg1</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Rdg2</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Rdg3</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>AvgRdg</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_6">
+             <property name="title">
+              <string>SSD:90 Depth:10</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_9">
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="PhotonEnergy2">
+                <row>
+                 <property name="text">
+                  <string>6X</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>18X</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>SRS 6X</string>
+                 </property>
+                </row>
+                <column>
+                 <property name="text">
+                  <string>Rdg1</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Rdg2</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Rdg3</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>AvgRdg</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QSplitter" name="splitter_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="QGroupBox" name="groupBox_7">
+             <property name="title">
+              <string>TPR20/10</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="0" column="0">
+               <widget class="QTableWidget" name="PhotonEnergy3">
+                <row>
+                 <property name="text">
+                  <string>6X</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>18X</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>SRS 6X</string>
+                 </property>
+                </row>
+                <column>
+                 <property name="text">
+                  <string>Ref Date</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Baseline</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Measured</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>%Diff</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>Electron Energy</string>
+        </attribute>
+        <widget class="QTableWidget" name="ElectronEnergy1">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>441</width>
+           <height>221</height>
+          </rect>
+         </property>
+         <row>
+          <property name="text">
+           <string>20E</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>16E</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>12E</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>9E</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>6E</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4E</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Ref Date</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Baseline</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Energy (MeV)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>%Diff</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string> </string>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string> </string>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string> </string>
+          </property>
+         </item>
+         <item row="0" column="3">
+          <property name="text">
+           <string> </string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string>  </string>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="1" column="2">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="1" column="3">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="2" column="2">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="2" column="3">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="3" column="1">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="3" column="2">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="3" column="3">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="4" column="1">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="4" column="2">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="4" column="3">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="5" column="1">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="5" column="2">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+         <item row="5" column="3">
+          <property name="text">
+           <string>   </string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>648</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Physicists:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="physicistsID"/>
+       </item>
+       <item>
+        <widget class="QDialogButtonBox" name="buttonBox">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="standardButtons">
+          <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>788</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <zorder></zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

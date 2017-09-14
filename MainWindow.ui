@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1041</width>
+    <height>817</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RTQA</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>Selected Machine: LA1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QMdiArea" name="mdiArea"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1041</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNewMachine"/>
+    <addaction name="actionSelectMC"/>
+    <addaction name="actionGenerate_report"/>
+    <addaction name="actionAuto_Generate_Report"/>
+   </widget>
+   <widget class="QMenu" name="menuQA_Tests">
+    <property name="title">
+     <string>&amp;MLC QA</string>
+    </property>
+    <widget class="QMenu" name="menuPicket_Fence">
+     <property name="title">
+      <string>Picket &amp;Fence 0</string>
+     </property>
+     <addaction name="actionLoad_ImagesPF0"/>
+    </widget>
+    <widget class="QMenu" name="menuPyramids">
+     <property name="title">
+      <string>&amp;Pyramids</string>
+     </property>
+     <addaction name="actionLoad_ImagesPyramid"/>
+    </widget>
+    <widget class="QMenu" name="menuSSS">
+     <property name="title">
+      <string>&amp;SSS</string>
+     </property>
+     <addaction name="actionLoad_ImagesSSS"/>
+    </widget>
+    <widget class="QMenu" name="menuXWedges">
+     <property name="title">
+      <string>&amp;XWedges</string>
+     </property>
+     <addaction name="actionLoad_ImagesXWedges"/>
+    </widget>
+    <widget class="QMenu" name="menuNSS">
+     <property name="title">
+      <string>&amp;NSS</string>
+     </property>
+     <addaction name="actionLoad_ImagesNSS"/>
+    </widget>
+    <widget class="QMenu" name="menuYWedges">
+     <property name="title">
+      <string>&amp;YWedges</string>
+     </property>
+     <addaction name="actionLoad_ImagesYWedges"/>
+    </widget>
+    <widget class="QMenu" name="menuComplexA">
+     <property name="title">
+      <string>Complex&amp;A</string>
+     </property>
+     <addaction name="actionLoad_ImagesComplexA"/>
+    </widget>
+    <widget class="QMenu" name="menuComplexB">
+     <property name="title">
+      <string>Complex&amp;B</string>
+     </property>
+     <addaction name="actionLoad_ImagesComplexB"/>
+    </widget>
+    <widget class="QMenu" name="menu_MLC_Alignment">
+     <property name="title">
+      <string>&amp;MLC Alignment</string>
+     </property>
+     <addaction name="actionLoadImages_MLCAlign"/>
+    </widget>
+    <widget class="QMenu" name="menuPicket_Fence_270">
+     <property name="title">
+      <string>Picket Fence 270</string>
+     </property>
+     <addaction name="actionLoad_ImagesPF270"/>
+    </widget>
+    <widget class="QMenu" name="menuPicket_Fence_90">
+     <property name="title">
+      <string>Picket Fence 90</string>
+     </property>
+     <addaction name="actionLoad_ImagesPF90"/>
+    </widget>
+    <addaction name="menuComplexA"/>
+    <addaction name="menuComplexB"/>
+    <addaction name="menu_MLC_Alignment"/>
+    <addaction name="menuNSS"/>
+    <addaction name="menuPicket_Fence"/>
+    <addaction name="menuPicket_Fence_270"/>
+    <addaction name="menuPicket_Fence_90"/>
+    <addaction name="menuPyramids"/>
+    <addaction name="menuSSS"/>
+    <addaction name="menuXWedges"/>
+    <addaction name="menuYWedges"/>
+   </widget>
+   <widget class="QMenu" name="menuAnalyses">
+    <property name="title">
+     <string>Analyses</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuLinac_QA">
+    <property name="title">
+     <string>Linac QA</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuOBI_QA">
+    <property name="title">
+     <string>CT/CBCT QA</string>
+    </property>
+    <addaction name="actionLoadCTImages"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuQA_Tests"/>
+   <addaction name="menuLinac_QA"/>
+   <addaction name="menuOBI_QA"/>
+   <addaction name="menuAnalyses"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionNewMachine">
+   <property name="text">
+    <string>New Machine</string>
+   </property>
+  </action>
+  <action name="actionSelectMC">
+   <property name="text">
+    <string>Select Machine</string>
+   </property>
+  </action>
+  <action name="actionLoad_ImagesPF0">
+   <property name="text">
+    <string>Load Image(s)</string>
+   </property>
+  </action>
+  <action name="actionAnalyze">
+   <property name="text">
+    <string>Analyze</string>
+   </property>
+  </action>
+  <action name="actionTest1">
+   <property name="text">
+    <string>Test1</string>
+   </property>
+  </action>
+  <action name="actionTest2">
+   <property name="text">
+    <string>Test2</string>
+   </property>
+  </action>
+  <action name="actionLoad_ImagesSSS">
+   <property name="text">
+    <string>Load Image(s)</string>
+   </property>
+  </action>
+  <action name="actionLoad_ImagesNSS">
+   <property name="text">
+    <string>Load Images(s)</string>
+   </property>
+  </action>
+  <action name="actionLoad_ImagesXWedges">
+   <property name="text">
+    <string>Load Images(s)</string>
+   </property>
+  </action>
+  <action name="actionLoad_ImagesYWedges">
+   <property name="text">
+    <string>Load Images(s)</string>
+   </property>
+  </action>
+  <action name="actionLoad_ImagesPyramid">
+   <property name="text">
+    <string>Load Images(s)</string>
+   </property>
+  </action>
+  <action name="actionLoad_ImagesComplexA">
+   <property name="text">
+    <string>Load Images(s)</string>
+   </property>
+  </action>
+  <action name="actionLoad_ImagesComplexB">
+   <property name="text">
+    <string>Load Images(s)</string>
+   </property>
+  </action>
+  <action name="actionLoad_ImagesContStripes">
+   <property name="text">
+    <string>Load Images(s)</string>
+   </property>
+  </action>
+  <action name="actionLoadCTImages">
+   <property name="text">
+    <string>LoadCTImages</string>
+   </property>
+  </action>
+  <action name="actionLoadImages_MLCAlign">
+   <property name="text">
+    <string>Load Images(2)</string>
+   </property>
+  </action>
+  <action name="actionGenerate_report">
+   <property name="text">
+    <string>Generate &amp;Report</string>
+   </property>
+  </action>
+  <action name="actionLoad_ImagesPF270">
+   <property name="text">
+    <string>Load Image(s)</string>
+   </property>
+  </action>
+  <action name="actionLoad_ImagesPF90">
+   <property name="text">
+    <string>Load Image(s)</string>
+   </property>
+  </action>
+  <action name="actionAuto_Generate_Report">
+   <property name="text">
+    <string>&amp;Auto Generate Report</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionNewMachine</sender>
+   <signal>triggered()</signal>
+   <receiver>statusbar</receiver>
+   <slot>showMaximized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1048</width>
+    <height>869</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Synchronised Segment Stripes</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QComboBox" name="cmapCombi">
+           <item>
+            <property name="text">
+             <string>gray</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>prism</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>autumn</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>cool</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>spring</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>summer</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>winter</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="MatplotlibWidget" name="SSSCombi"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QComboBox" name="cmap1">
+             <item>
+              <property name="text">
+               <string>gray</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>prism</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>autumn</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>cool</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>spring</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>summer</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>winter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="MatplotlibWidget" name="SSS1"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QComboBox" name="cmap2">
+             <item>
+              <property name="text">
+               <string>gray</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>prism</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>autumn</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>cool</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>spring</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>summer</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>winter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="MatplotlibWidget" name="SSS2"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QComboBox" name="cmap3">
+           <item>
+            <property name="text">
+             <string>gray</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>prism</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>autumn</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>cool</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>spring</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>summer</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>winter</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="MatplotlibWidget" name="SSS3"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QComboBox" name="cmap4">
+           <item>
+            <property name="text">
+             <string>gray</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>prism</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>autumn</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>cool</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>spring</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>summer</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>winter</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="MatplotlibWidget" name="SSS4"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>layoutWidget_3</zorder>
+  <zorder>layoutWidget_4</zorder>
+  <zorder>verticalSpacer</zorder>
+  <zorder>SSS3</zorder>
+  <zorder>SSS4</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MatplotlibWidget</class>
+   <extends>QWidget</extends>
+   <header>matplotlibwidget</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

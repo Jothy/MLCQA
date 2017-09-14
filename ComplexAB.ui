@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>822</width>
+    <height>882</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ComplexAB</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QComboBox" name="cmap">
+       <item>
+        <property name="text">
+         <string>gray</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>prism</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>autumn</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>cool</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>spring</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>summer</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>winter</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="MatplotlibWidget" name="mplwidget"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MatplotlibWidget</class>
+   <extends>QWidget</extends>
+   <header>matplotlibwidget</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
