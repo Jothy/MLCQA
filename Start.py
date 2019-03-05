@@ -42,6 +42,7 @@ class StartQT(  QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+
         #Connect signal slots
         self.ui.pushButtonMLCQAMonthly.clicked.connect(self.AutoReportMonthlyMLCQA)
 
@@ -321,7 +322,8 @@ class StartQT(  QtWidgets.QMainWindow):
         MLCAlignDlg1.MLCAlignWidget.axes.set_xlabel('Pixel No. A-B', fontsize=8)
         MLCAlignDlg1.MLCAlignWidget.axes.set_ylabel('Pixel No. T-G', fontsize=8)
         MLCAlignDlg1.MLCAlignWidget.draw()
-        self.SaveWidgetScreenShot(MLCAlignDlg1.MLCAlignWidget, 'MLCAlignment.jpg')
+        MLCAlignDlg1.MLCAlignWidget.figure.savefig('MLCAlignment.jpg')
+        #self.SaveWidgetScreenShot(MLCAlignDlg1, 'MLCAlignment.jpg')
         MLCAlignDlg1.exec_()
 
         if self.Mode == "Manual":
@@ -390,7 +392,7 @@ class StartQT(  QtWidgets.QMainWindow):
 
 
     def CreatePDFReportMLCMonthlyQA(self):
-        mcID =QtWidgets.QInputDialog.getText(self, "Enter M/C ID", "M/C ID:", 0)
+        mcID =QtWidgets.QInputDialog.getText(self, "Enter M/C ID", "M/C ID [LA1/LA2/LA3/LA4]:", 0)
         #mcID = QtGui.QComboBox(self,"M/C ID:")
         msrBy =QtWidgets.QInputDialog.getText(self, "Initials", "Measured by:", 0)
         if mcID[1] == True and msrBy[1] == True:
@@ -477,6 +479,8 @@ class StartQT(  QtWidgets.QMainWindow):
 
             # Save the PDF to database -"D:\MLC QA\LA ID" LA ID=LA1/LA2/LA3/LA4
             c.save()
+            ReportTxt="Report saved to:"+self.reportStr
+            QtWidgets.QMessageBox.about(self, "Information",ReportTxt )
             os.startfile(self.reportStr)
 
 

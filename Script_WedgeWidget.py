@@ -95,7 +95,7 @@ class WedgeWidget(QtWidgets.QDialog,Ui_Form):
                 #self.profiler.axes.hold(True)
                 xProfileCombined=self.Img3[384,:]*-1.0
                 self.profiler.axes.plot(xProfileCombined,'b')
-                self.profiler.axes.hold(True)
+                #self.profiler.axes.hold(True)
 
                 xValues=np.linspace(0,1024,1024)
                 yValuesUP=np.ones([1024])*(self.CentreMeanValue+self.CentreMeanValue*0.02)
@@ -129,7 +129,7 @@ class WedgeWidget(QtWidgets.QDialog,Ui_Form):
                 #self.profiler.axes.hold(True)
                 yProfileCombined=self.Img3[:,512]*-1.0
                 self.profiler.axes.plot(yProfileCombined,'b')
-                self.profiler.axes.hold(True)
+                #self.profiler.axes.hold(True)
 
                 xValues=np.linspace(0,768,768)
                 yValuesUP=np.ones([768])*(self.CentreMeanValue+self.CentreMeanValue*0.02)
